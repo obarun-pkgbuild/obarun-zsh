@@ -318,7 +318,7 @@ zstyle ':completion:*' menu select=2
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion:*:descriptions' format '%U%F{cyan}%d%f%u'
-
+zstyle ':completion:*' rehash true
 
 # If running as root and nice >0, renice to 0.
 if [ "$EUID" = "0" ] && [ "$(cut -d ' ' -f 19 /proc/$$/stat)" -gt 0 ]; then
